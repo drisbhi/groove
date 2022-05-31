@@ -23,7 +23,7 @@ function MintToken() {
     // Generate a new wallet keypair and airdrop SOL
     const fromWallet = Keypair.generate();
     // Public Key to your Phantom Wallet
-    const toWallet = new PublicKey("INSERT YOUR PUBLIC KEY HERE");
+    const toWallet = new PublicKey("BiSrbYSwGJUe4FnPeLTUCkKJ6Nw89DoZbDbXk4VUStnu");
 	let fromTokenAccount: Account; 
 	let mint: PublicKey;
 
@@ -78,6 +78,7 @@ function MintToken() {
         // Get the token account of the toWallet address, and if it does not exist, create it
         const toTokenAccount = await getOrCreateAssociatedTokenAccount(connection, fromWallet, mint, toWallet);
         console.log(`toTokenAccount ${toTokenAccount.address}`);
+        console.log(`fromTokenAccount ${fromTokenAccount.address}`);
 
         const signature = await transfer(
             connection,
@@ -92,12 +93,12 @@ function MintToken() {
     
     return (
         <div>
-            Mint Token Section
-            <div>
-                <button onClick={createToken}>Create token</button>
-                <button onClick={mintToken}>Mint token</button>
-                <button onClick={checkBalance}>Check balance</button>
-                <button onClick={sendToken}>Send token</button>
+            <h1> Token Creation</h1>
+            <div style={{display:'flex' , flexDirection: "column" }}>
+                <button onClick={createToken} style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Create token</button>
+                <button onClick={mintToken} style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Mint token</button>
+                <button onClick={checkBalance}style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Check balance</button>
+                <button onClick={sendToken}style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Send token</button>
             </div>
         </div>
     );

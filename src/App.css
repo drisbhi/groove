@@ -13,8 +13,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* .App-header {
+  background-color: #fcfdff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+a {
+  color: white;
+}
+.twitter-link {
+  color: "white";
+  font-size: "16px";
+  margin-top: "15px";
+  margin-bottom: "15px";
+}
+.App-wallet{
+  margin-left: 1000px;
+ 
+}
+.App-center{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+ 
 }

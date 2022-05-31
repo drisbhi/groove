@@ -75,11 +75,11 @@ function MintNft() {
 
     return (
         <div>
-            Mint Nft Section
-            <div>
-                <button onClick={createNft}>Create NFT</button>
-                <button onClick={mintNft}>Mint NFT</button>
-                <button onClick={lockNft}>Lock NFT</button>
+            <h1>Nft Creation</h1>
+            <div style={{display:'flex' , flexDirection: "column" }}>
+                <button onClick={createNft} style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Create NFT</button>
+                <button onClick={mintNft} style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Mint NFT</button>
+                <button onClick={lockNft} style={{margin:'5px' , height:'30px' , backgroundColor:'black' , color:'white'}}>Lock NFT</button>
             </div>
         </div>
     );

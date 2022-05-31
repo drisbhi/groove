@@ -114,11 +114,11 @@ function SendSol() {
 
     return (
         <div>
-            Send Sol Section
-            <div>
-                <button onClick={wrapSol}>Wrap SOL</button>
-                <button onClick={unwrapSol}>Unwrap SOL</button>
-                <button onClick={sendSol}>Send SOL</button>
+            <h1>Subscription Payment</h1> 
+            <div style={{display:'flex' , flexDirection: "column" }}>
+                <button onClick={wrapSol} style={{margin:'5px' , height:'30px',  backgroundColor:'black' , color:'white'}}>Wrap SOL</button>
+                <button onClick={unwrapSol} style={{margin:'5px',height:'30px',  backgroundColor:'black' , color:'white'}}>Unwrap SOL</button>
+                <button onClick={sendSol} style={{margin:'5px',height:'30px', backgroundColor:'black' , color:'white'}}>Send SOL</button>
             </div>
         </div>
     );
